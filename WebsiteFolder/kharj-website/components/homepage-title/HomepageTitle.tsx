@@ -1,4 +1,4 @@
-import { Container, Box, Heading } from '@chakra-ui/react'
+import { Container, Box, Heading, Text } from '@chakra-ui/react'
 
 export const HomepageTitle = () => {
     return (
@@ -8,7 +8,11 @@ export const HomepageTitle = () => {
                     Kharj 
                 </Heading>
     
-                
+                <Text as="h2" lineHeight='160%'>
+                    Hey I'm Kharj and I'm a software engineer.
+                     I'm currently working at a startup called  
+                       as a frontend engineer. I'm also a student at the University of Turkish Aeronautical Association studying Computer Engineer.
+                </Text>
             </Box>
         </Container>
 
