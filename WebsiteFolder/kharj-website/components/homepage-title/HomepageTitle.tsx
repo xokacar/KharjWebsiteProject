@@ -1,4 +1,5 @@
 import { Container, Box, Heading, Text } from '@chakra-ui/react'
+import { AvatarImage } from '../avatar-image/Avatar-Image'
 
 export const HomepageTitle = () => {
     return (
@@ -14,6 +15,7 @@ export const HomepageTitle = () => {
                        as a frontend engineer. I'm also a student at the University of Turkish Aeronautical Association studying Computer Engineer.
                 </Text>
             </Box>
+            <AvatarImage/>
         </Container>
 
     )

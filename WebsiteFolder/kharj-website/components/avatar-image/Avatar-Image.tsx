@@ -1,16 +1,17 @@
-import {Box, AspectRatio, Flex, Image} from '@chakra-ui/react'
+import {Box, AspectRatio, Flex, Img} from '@chakra-ui/react'
 
 export const AvatarImage = () => {
     return (
-        <Flex position='relative' justify='center' pb={4}>
-            <AspectRatio as='figure'>
+        
+            
                 <Box>
-                    <Image
+                    <Img
                     borderRadius='full'
                     boxSize='200px'
-                    src='../public/images/okay-memoji.jpg'/>
+                    src='https://user-images.githubusercontent.com/44809357/184952777-451f8e3d-f73b-4474-97be-d604b5accf67.jpg'
+                    />     
                 </Box>
-            </AspectRatio>
-        </Flex>
+            
+        
     )
 }
