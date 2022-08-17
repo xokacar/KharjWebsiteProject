@@ -3,6 +3,7 @@ import {
   cookieStorageManagerSSR,
   localStorageManager,
 } from '@chakra-ui/react'
+import { anatheme } from './utils/theme'
 
 export function Chakra({ cookies, children }) {
   // b) Pass `colorModeManager` prop
@@ -11,8 +12,10 @@ export function Chakra({ cookies, children }) {
       ? cookieStorageManagerSSR(cookies)
       : localStorageManager
 
+      
+
   return (
-    <ChakraProvider colorModeManager={colorModeManager}>
+    <ChakraProvider colorModeManager={colorModeManager} theme={anatheme} >
       {children}
     </ChakraProvider>
   )
