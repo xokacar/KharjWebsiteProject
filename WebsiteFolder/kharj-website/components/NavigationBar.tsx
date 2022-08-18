@@ -5,10 +5,9 @@ import {
     Box,
     useColorModeValue,
     Flex,
-    IconButton,
   } from '@chakra-ui/react'
-import {MoonIcon} from '@chakra-ui/icons'
 import * as React from "react"
+import { ThemeChanger } from './theme-toggle/ThemeChanger';
 
 export const NavigationBar = () => {
 
@@ -33,11 +32,7 @@ export const NavigationBar = () => {
                             </BreadcrumbItem>
             
             </Breadcrumb >
-            <IconButton
-            aria-label='toggle theme'
-            >
-            <MoonIcon/>
-            </IconButton>
+            <ThemeChanger/>
             </Flex>
             </Box>
     );
