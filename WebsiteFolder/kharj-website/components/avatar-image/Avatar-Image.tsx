@@ -1,4 +1,4 @@
-import {Box,AspectRatio, Flex, Img} from '@chakra-ui/react'
+import {Box, Img} from '@chakra-ui/react'
 
 export const AvatarImage = () => {
     return (
