@@ -1,3 +1,158 @@
 {
-  "extends": ["next/babel","next/core-web-vitals"]
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "project": [
+          "./tsconfig.json"
+      ]
+  },
+  "extends": [
+      "plugin:react/recommended",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/recommended-requiring-type-checking",
+      "plugin:prettier/recommended",
+      "next"
+  ],
+  "env": {
+      "node": true,
+      "jest": true
+  },
+  "plugins": [
+      "react",
+      "prettier"
+  ],
+  "rules": {
+      "prettier/prettier": [
+          "error",
+          {
+              "linebreak-style": 0,
+              "trailingComma": "es5",
+              "endOfLine": "auto",
+              "printWidth": 80,
+              "semi": true,
+              "jsxSingleQuote": true,
+              "singleQuote": true,
+              "useTabs": true
+          }
+      ],
+      "semi": "off",
+      "@typescript-eslint/semi": ["error"],
+      "@typescript-eslint/interface-name-prefix": "off",
+      "@typescript-eslint/naming-convention": [
+          "error",
+          {
+              "selector": "variable",
+              "format": [
+                  "camelCase",
+                  "PascalCase",
+                  "UPPER_CASE"
+              ]
+          },
+          {
+              "selector": "variable",
+              "types": [
+                  "boolean"
+              ],
+              "format": [
+                  "PascalCase"
+              ],
+              "prefix": [
+                  "is",
+                  "should",
+                  "has",
+                  "can",
+                  "did",
+                  "will"
+              ]
+          },
+          {
+              "selector": "enumMember",
+              "format": [
+                  "UPPER_CASE"
+              ]
+          },
+          {
+              "selector": "class",
+              "format": [
+                  "PascalCase"
+              ]
+          },
+          {
+              "selector": "method",
+              "format": [
+                  "camelCase"
+              ]
+          }
+      ],
+      "@typescript-eslint/unbound-method": [
+          "error",
+          {
+              "ignoreStatic": true
+          }
+      ],
+      "import/prefer-default-export": "off",
+      "no-plusplus": "off",
+      "no-restricted-syntax": "off",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "padding-line-between-statements": [
+          "error",
+          {
+              "blankLine": "always",
+              "prev": [
+                  "const",
+                  "let",
+                  "var"
+              ],
+              "next": "*"
+          },
+          {
+              "blankLine": "any",
+              "prev": [
+                  "const",
+                  "let",
+                  "var"
+              ],
+              "next": [
+                  "const",
+                  "let",
+                  "var"
+              ]
+          },
+          {
+              "blankLine": "always",
+              "prev": "*",
+              "next": "return"
+          }
+      ]
+  },
+  "settings": {
+      "react": {
+          "version": "detect"
+      }
+  },
+  "overrides": [
+      {
+          "files": [
+              "*"
+          ],
+          "rules": {
+              "@typescript-eslint/naming-convention": [
+                  "warn",
+                  {
+                      "selector": "interface",
+                      "custom": {
+                          "regex": "I[A-Z]\\w+",
+                          "match": false
+                      },
+                      "format": [
+                          "PascalCase"
+                      ]
+                  }
+              ]
+          }
+      }
+  ]
 }

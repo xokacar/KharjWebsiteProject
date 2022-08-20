@@ -1,41 +1,67 @@
 import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    Box,
-    useColorModeValue,
-    Flex,
-  } from '@chakra-ui/react'
-import * as React from "react"
+	Menu,
+	MenuItem,
+	Box,
+	useColorModeValue,
+	Stack,
+	IconButton,
+	useDisclosure,
+	Container,
+} from '@chakra-ui/react';
+import NextLink from 'next/link';
+import * as React from 'react';
 import { ThemeChanger } from './theme-toggle/ThemeChanger';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 export const NavigationBar = () => {
+	const { isOpen, onOpen, onClose } = useDisclosure();
 
-
-    return (
-        <Box 
-        bg={useColorModeValue('gray.100', 'gray.900')} 
-        px={4}>
-        <Flex 
-        h={16}
-        alignItems="center"
-        justifyContent="space-between">
-        <Breadcrumb>
-            <BreadcrumbItem>
-                <BreadcrumbLink href="#">Home</BreadcrumbLink>
-            </BreadcrumbItem>  
-                    <BreadcrumbItem>
-                        <BreadcrumbLink href="#">About</BreadcrumbLink>
-                    </BreadcrumbItem>
-                            <BreadcrumbItem>
-                                <BreadcrumbLink href="#">Works</BreadcrumbLink>
-                            </BreadcrumbItem>
-            
-            </Breadcrumb >
-            <ThemeChanger/>
-            </Flex>
-            </Box>
-    );
+	return (
+		<Box
+			position='fixed'
+			as='nav'
+			w='100%'
+			bg={useColorModeValue('gray.100', 'gray.900')}
+			zIndex={2}
+			px={4}
+		>
+			<Container
+				display='flex'
+				p={2}
+				maxW='container.md'
+				flexWrap='wrap'
+				alignItems='center'
+				justify-content='space-between'
+			>
+				<Stack
+					direction={{ base: 'column', md: 'row' }}
+					display={{ base: 'none', md: 'flex' }}
+					width={{ base: 'full', md: 'auto' }}
+					alignItems='center'
+					flexGrow={1}
+					mt={{ base: 4, md: 0 }}
+				>
+					<Menu>
+						<NextLink href='/' passHref>
+							<MenuItem>Home</MenuItem>
+						</NextLink>
+						<NextLink href='/about' passHref>
+							<MenuItem>About</MenuItem>
+						</NextLink>
+						<NextLink href='/works' passHref>
+							<MenuItem>Works</MenuItem>
+						</NextLink>
+					</Menu>
+				</Stack>
+				<ThemeChanger />
+				<IconButton
+					size={'md'}
+					icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+					aria-label={'Open Menu'}
+					display={{ md: 'none' }}
+					onClick={isOpen ? onClose : onOpen}
+				/>
+			</Container>
+		</Box>
+	);
 };
-
-
