@@ -8,7 +8,6 @@ import {
 	useDisclosure,
 	Container,
 } from '@chakra-ui/react';
-import NextLink from 'next/link';
 import * as React from 'react';
 import { ThemeChanger } from './theme-toggle/ThemeChanger';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
@@ -42,15 +41,7 @@ export const NavigationBar = () => {
 					mt={{ base: 4, md: 0 }}
 				>
 					<Menu>
-						<NextLink href='/' passHref>
 							<MenuItem>Home</MenuItem>
-						</NextLink>
-						<NextLink href='/about' passHref>
-							<MenuItem>About</MenuItem>
-						</NextLink>
-						<NextLink href='/works' passHref>
-							<MenuItem>Works</MenuItem>
-						</NextLink>
 					</Menu>
 				</Stack>
 				<ThemeChanger />
