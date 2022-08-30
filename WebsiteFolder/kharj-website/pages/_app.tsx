@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app';
 import { extendTheme } from '@chakra-ui/react';
 import baseTheme from '../utils/theme';
 import { Chakra } from '../Chakra';
-import { NavigationBar } from '../components/NavigationBar';
+import { NavigationBar } from '../components/navigation-bar/NavigationBar';  
 import { Main } from '../components/Main';
 import { HomepageContent } from '../components/homepage-content/HomepageContent';
 import { Layout } from '../components/layout';

@@ -7,10 +7,14 @@ import {
 	IconButton,
 	useDisclosure,
 	Container,
+	Flex,
+	Heading,
+	HStack
 } from '@chakra-ui/react';
 import * as React from 'react';
-import { ThemeChanger } from './theme-toggle/ThemeChanger';
+import { ThemeChanger } from '../theme-toggle/ThemeChanger';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import NextLink from 'next/link';
 
 export const NavigationBar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -22,7 +26,6 @@ export const NavigationBar = () => {
 			w='100%'
 			bg={useColorModeValue('gray.100', 'gray.900')}
 			zIndex={2}
-			px={4}
 		>
 			<Container
 				display='flex'
@@ -32,6 +35,11 @@ export const NavigationBar = () => {
 				alignItems='center'
 				justify-content='space-between'
 			>
+				<Flex
+				align='center' mr={5}
+				>
+					 <Heading as="h1" size="lg" letterSpacing={'tighter'}>Kharj</Heading>
+					</Flex>
 				<Stack
 					direction={{ base: 'column', md: 'row' }}
 					display={{ base: 'none', md: 'flex' }}
@@ -40,9 +48,8 @@ export const NavigationBar = () => {
 					flexGrow={1}
 					mt={{ base: 4, md: 0 }}
 				>
-					<Menu>
-							<MenuItem>Home</MenuItem>
-					</Menu>
+					{/* thename.map(({ href, label })  */}
+
 				</Stack>
 				<ThemeChanger />
 				<IconButton
