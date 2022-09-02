@@ -1,6 +1,4 @@
-import {
-	Menu,
-	MenuItem,
+import { 
 	Box,
 	useColorModeValue,
 	Stack,
@@ -18,7 +16,16 @@ import NextLink from 'next/link';
 
 export const NavigationBar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-
+	const NavbarItems = [
+		{
+			name: 'Home',
+			href: '/'
+		},
+		{
+			name: 'Contact',
+			href: '/contact'
+		}
+	];
 	return (
 		<Box
 			position='fixed'
@@ -48,7 +55,11 @@ export const NavigationBar = () => {
 					flexGrow={1}
 					mt={{ base: 4, md: 0 }}
 				>
-					{/* thename.map(({ href, label })  */}
+					{NavbarItems.map(({ href, name }) => (
+						<NextLink href={href} key={name}>
+							{name}
+						</NextLink>
+					))}
 
 				</Stack>
 				<ThemeChanger />
