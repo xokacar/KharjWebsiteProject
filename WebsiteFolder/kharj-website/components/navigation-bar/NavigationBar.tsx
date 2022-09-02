@@ -42,11 +42,7 @@ export const NavigationBar = () => {
 				alignItems='center'
 				justify-content='space-between'
 			>
-				<Flex
-				align='center' mr={5}
-				>
-					 <Heading as="h1" size="lg" letterSpacing={'tighter'}>Kharj</Heading>
-					</Flex>
+				
 				<Stack
 					direction={{ base: 'column', md: 'row' }}
 					display={{ base: 'none', md: 'flex' }}
