@@ -5,9 +5,6 @@ import {
 	IconButton,
 	useDisclosure,
 	Container,
-	Flex,
-	Heading,
-	HStack
 } from '@chakra-ui/react';
 import * as React from 'react';
 import { ThemeChanger } from '../theme-toggle/ThemeChanger';
@@ -24,7 +21,7 @@ export const NavigationBar = () => {
 		{
 			name: 'Contact',
 			href: '/contact'
-		}
+		},
 	];
 	return (
 		<Box
