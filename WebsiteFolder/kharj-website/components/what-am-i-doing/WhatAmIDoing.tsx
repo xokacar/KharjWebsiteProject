@@ -2,12 +2,12 @@ import React from 'react'
 import  Image  from 'next/image';
 import { Heading } from '@chakra-ui/react';
 
-export const WhatDoIUse = () => {
+export const WhatAmIDoing = () => {
     
     return (
         
         <React.Fragment>
-        <Heading as='h5' size='lg'> What do I use ?</Heading>
+        <Heading as='h5' size='lg'> What am I Doing ?</Heading>
         <Image src='/logo-typescript.svg' height={30} width={30} />
         <Image src='/logo-css.svg' height={30} width={30} />
         <Image src='/logo-figma.svg' height={30} width={30} />

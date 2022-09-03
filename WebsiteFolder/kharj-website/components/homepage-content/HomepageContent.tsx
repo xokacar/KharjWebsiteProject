@@ -5,7 +5,7 @@ import {
 	Stack,
 } from '@chakra-ui/react';
 import { AvatarImage } from '../avatar-image/Avatar-Image';
-import {WhatDoIUse} from '../what-do-i-use/WhatDoIUse'
+import {WhatAmIDoing} from '../what-am-i-doing/WhatAmIDoing'
 
 export const HomepageContent = () => {
 	return (
@@ -35,7 +35,7 @@ export const HomepageContent = () => {
 					Engineer.
 				</Text>
 				<Stack>
-					<WhatDoIUse />
+					<WhatAmIDoing />
 				</Stack>
 			</VStack>
 			<AvatarImage />
