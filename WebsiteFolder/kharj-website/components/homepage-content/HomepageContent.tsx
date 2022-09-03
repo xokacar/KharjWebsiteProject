@@ -1,15 +1,11 @@
-//without layout alignment it looks like a shit
-
 import {
-	Container,
-	Box,
 	Heading,
 	Text,
-	HStack,
 	VStack,
 	Stack,
 } from '@chakra-ui/react';
 import { AvatarImage } from '../avatar-image/Avatar-Image';
+import {WhatDoIUse} from '../what-do-i-use/WhatDoIUse'
 
 export const HomepageContent = () => {
 	return (
@@ -38,8 +34,12 @@ export const HomepageContent = () => {
 					University of Turkish Aeronautical Association studying Computer
 					Engineer.
 				</Text>
+				<Stack>
+					<WhatDoIUse />
+				</Stack>
 			</VStack>
 			<AvatarImage />
+			
 		</Stack>
 	);
 };
