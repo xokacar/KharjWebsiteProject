@@ -7,6 +7,7 @@ import {
 import React from 'react';
 import { AvatarImage } from '../avatar-image/Avatar-Image';
 import { Section } from '../layout/section';
+import { Bio }  from '../Bio/bio';
 
 
 export const HomepageContent = () => {
@@ -52,6 +53,11 @@ export const HomepageContent = () => {
 			<AvatarImage />
 		</Stack>
 		</React.Fragment>
+		<React.Fragment>
+			<Bio />
+		</React.Fragment>
 		</Section>
 	);
 };
+
+// created by Kharj
