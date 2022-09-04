@@ -29,13 +29,13 @@ export const HomepageContent = () => {
 					w='full'
 					spacing={3}
 				>
-					<Heading as='h1' size='lg'>
+					<Heading as='h1' size='lg' letterSpacing='wider'>
 						Kharj
 					</Heading>
 				</Stack>
 				<Text as='h2' lineHeight='160%'>
 					Hey I'm Kharj and I'm a software engineer. I'm currently working at a
-					startup called as a frontend engineer. I'm also a student at the
+					startup called as Pavza a frontend engineer. I'm also a student at the
 					University of Turkish Aeronautical Association studying Computer
 					Engineer.
 				</Text>
@@ -60,4 +60,3 @@ export const HomepageContent = () => {
 	);
 };
 
-// created by Kharj
