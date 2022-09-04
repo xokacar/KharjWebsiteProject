@@ -1,5 +1,6 @@
 import { VStack, Container } from '@chakra-ui/react';
 import { PropsWithChildren } from 'react';
+import { Footer } from './footer';
 
 type Props = PropsWithChildren<{}>;
 
@@ -17,6 +18,7 @@ export const Layout = ({ children }: Props) => {
 					<VStack as='main' flex={1} w='full' spacing={16}>
 						{children}
 					</VStack>
+					<Footer />
 				</VStack>
 			</Container>
 		</>
