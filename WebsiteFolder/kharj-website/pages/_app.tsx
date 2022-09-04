@@ -5,7 +5,8 @@ import { Chakra } from '../Chakra';
 import { NavigationBar } from '../components/navigation-bar/NavigationBar';  
 import { Main } from '../components/Main';
 import { HomepageContent } from '../components/homepage-content/HomepageContent';
-import { Layout } from '../components/layout';
+import { Layout } from '../components/layout/index';
+
 
 const theme = extendTheme({ baseTheme });
 
