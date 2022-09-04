@@ -8,6 +8,7 @@ import React from 'react';
 import { AvatarImage } from '../avatar-image/Avatar-Image';
 import { Section } from '../layout/section';
 import { Bio }  from '../Bio/bio';
+import  {ILove} from '../i-love/ILove';
 
 
 export const HomepageContent = () => {
@@ -55,6 +56,7 @@ export const HomepageContent = () => {
 		</React.Fragment>
 		<React.Fragment>
 			<Bio />
+			<ILove />
 		</React.Fragment>
 		</Section>
 	);
