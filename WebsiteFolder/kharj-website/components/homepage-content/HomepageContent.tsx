@@ -9,6 +9,7 @@ import { AvatarImage } from '../avatar-image/Avatar-Image';
 import { Section } from '../layout/section';
 import { Bio }  from '../Bio/bio';
 import  {ILove} from '../i-love/ILove';
+import { Contact } from '../contact/contact';
 
 
 export const HomepageContent = () => {
@@ -57,6 +58,7 @@ export const HomepageContent = () => {
 		<React.Fragment>
 			<Bio />
 			<ILove />
+			<Contact />
 		</React.Fragment>
 		</Section>
 	);
