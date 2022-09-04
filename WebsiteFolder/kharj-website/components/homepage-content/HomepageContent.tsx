@@ -4,11 +4,15 @@ import {
 	VStack,
 	Stack,
 } from '@chakra-ui/react';
+import React from 'react';
 import { AvatarImage } from '../avatar-image/Avatar-Image';
-import {WhatAmIDoing} from '../what-am-i-doing/WhatAmIDoing'
+import { Section } from '../layout/section';
+
 
 export const HomepageContent = () => {
 	return (
+		<Section>
+		<React.Fragment>
 		<Stack
 			as='section'
 			alignItems='center'
@@ -34,12 +38,20 @@ export const HomepageContent = () => {
 					University of Turkish Aeronautical Association studying Computer
 					Engineer.
 				</Text>
-				<Stack>
-					<WhatAmIDoing />
-				</Stack>
+				<VStack alignItems='flex-start' w='full' spacing={3}>
+				<Stack
+					as='section'
+					alignItems='center'
+					direction={{ base: 'column-reverse', md: 'row' }}
+					w='full'
+					spacing={12}
+				>
+					</Stack>
+				</VStack>
 			</VStack>
 			<AvatarImage />
-			
 		</Stack>
+		</React.Fragment>
+		</Section>
 	);
 };
