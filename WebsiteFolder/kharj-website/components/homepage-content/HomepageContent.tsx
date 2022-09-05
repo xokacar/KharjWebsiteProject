@@ -57,7 +57,11 @@ export const HomepageContent = () => {
 		</React.Fragment>
 		<React.Fragment>
 			<Bio />
-			<ILove />
+		</React.Fragment>
+		<React.Fragment>
+		<ILove />
+		</React.Fragment>
+		<React.Fragment>
 			<Contact />
 		</React.Fragment>
 		</Section>

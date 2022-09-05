@@ -28,11 +28,20 @@ export const Contact = () => {
                     </Link>
             </ListItem>
             <ListItem>
-                <Link href='https://www.instagram.com/okaykacar_' target='_blank'>
+                <Link href='https://www.twitter.com/okaykacarr' target='_blank'>
                 <Button
                 variant="ghost"
               >
-                <Text lineHeight='taller'>Instagram</Text>
+                <Text lineHeight='taller'>Twitter</Text>
+                </Button>
+                    </Link>
+            </ListItem>
+            <ListItem>
+                <Link href='mailto:okay.kacar@outlook.com' target=''>
+                <Button
+                variant="ghost"
+              >
+                <Text lineHeight='taller'>E-mail</Text>
                 </Button>
                     </Link>
             </ListItem>
