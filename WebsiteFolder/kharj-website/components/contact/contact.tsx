@@ -5,7 +5,7 @@ export const Contact = () => {
     return (
         <Section delay={0.4}>
         <React.Fragment>
-        <Heading as='h1' size='lg' letterSpacing='wider'>  
+        <Heading as='h2' size='md' letterSpacing='wider' lineHeight='taller'>
         Contact with me
         </Heading>
         <List>

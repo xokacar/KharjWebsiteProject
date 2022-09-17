@@ -37,8 +37,8 @@ interface FeatureProps {
 export const ILove = () => {
     
     return (
-        <Box p={4}>
-                  <Heading as='h2' size='lg' lineHeight='1.8em' letterSpacing='wider'>
+        <React.Fragment>
+					<Heading as='h2' size='md' letterSpacing='wider' lineHeight=''>
             I Love
             </Heading>
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
@@ -64,6 +64,6 @@ export const ILove = () => {
             }
           />
         </SimpleGrid>
-      </Box>
+      </React.Fragment>
     );
   }

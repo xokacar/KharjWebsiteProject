@@ -11,7 +11,7 @@ export const Bio = () => {
     return (
         <Section>
         <React.Fragment>
-        <Heading as='h2' size='lg' lineHeight='1.8em' letterSpacing='wider'>
+        <Heading as='h2' size='md' letterSpacing='wider' lineHeight='taller'>
             Bio
             </Heading>
         <BioSection lineHeight='taller'>
