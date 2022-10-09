@@ -6,6 +6,7 @@
           "./tsconfig.json"
       ]
   },
+  
   "extends": [
       "plugin:react/recommended",
       "eslint:recommended",
@@ -135,9 +136,7 @@
   },
   "overrides": [
       {
-          "files": [
-              "*"
-          ],
+          "files": ["*.ts", "*.tsx"], 
           "rules": {
               "@typescript-eslint/naming-convention": [
                   "warn",
