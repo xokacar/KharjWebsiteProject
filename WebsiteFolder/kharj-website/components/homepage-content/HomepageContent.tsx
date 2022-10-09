@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Heading, Text, VStack, Stack } from '@chakra-ui/react';
 import React from 'react';
 import { AvatarImage } from '../avatar-image/Avatar-Image';

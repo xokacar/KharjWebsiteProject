@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-types */
 import { VStack, Container } from '@chakra-ui/react';
 import { PropsWithChildren } from 'react';
 import { Footer } from '../footer/footer';

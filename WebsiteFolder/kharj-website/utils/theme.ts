@@ -9,7 +9,7 @@ const config: ThemeConfig = {
 export const anatheme = extendTheme({
 	config,
 	styles: {
-		global: (props: Dict<any> | StyleFunctionProps) => ({
+		global: (props: Dict<unknown> | StyleFunctionProps) => ({
 			body: {
 				bg: mode('#ffffff', '#1a202c')(props),
 			},

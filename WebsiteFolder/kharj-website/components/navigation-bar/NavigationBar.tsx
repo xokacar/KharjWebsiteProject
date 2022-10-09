@@ -1,4 +1,4 @@
-import { 
+import {
 	Box,
 	useColorModeValue,
 	Stack,
@@ -16,13 +16,14 @@ export const NavigationBar = () => {
 	const NavbarItems = [
 		{
 			name: 'Home',
-			href: '/'
+			href: '/',
 		},
 		{
 			name: 'Contact',
-			href: '/contact'
+			href: '/contact',
 		},
 	];
+
 	return (
 		<Box
 			position='fixed'
@@ -39,7 +40,6 @@ export const NavigationBar = () => {
 				alignItems='center'
 				justify-content='space-between'
 			>
-				
 				<Stack
 					direction={{ base: 'column', md: 'row' }}
 					display={{ base: 'none', md: 'flex' }}
@@ -53,7 +53,6 @@ export const NavigationBar = () => {
 							{name}
 						</NextLink>
 					))}
-
 				</Stack>
 				<ThemeChanger />
 				<IconButton
