@@ -17,3 +17,4 @@ export default class Document extends NextDocument {
 		);
 	}
 }
+// something
