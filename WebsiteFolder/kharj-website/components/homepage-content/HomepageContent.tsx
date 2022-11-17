@@ -32,7 +32,7 @@ export const HomepageContent = () => {
 						</Stack>
 						<Text as='h2' lineHeight='160%'>
 							Hey I'm Kharj and I'm a software engineer. I'm currently working
-							at a startup called as Pavza a frontend engineer. I'm also a
+							at a startup called as NTT DATA a software engineer. I'm also a
 							student at the University of Turkish Aeronautical Association
 							studying Computer Engineer.
 						</Text>

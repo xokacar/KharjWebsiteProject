@@ -11,7 +11,11 @@ export const Bio = () => {
 					Bio
 				</Heading>
 				<BioSection lineHeight='taller'>
-					<BioYear>2022</BioYear>
+					<BioYear>2022-Q4 </BioYear>
+					Working as a Software Engineer at NTT DATA and Senior Student.
+				</BioSection>
+				<BioSection lineHeight='taller'>
+					<BioYear>2022-Q2</BioYear>
 					Working as a Frontend Developer at Pavza and Senior Student.
 				</BioSection>
 				<BioSection lineHeight='taller'>
