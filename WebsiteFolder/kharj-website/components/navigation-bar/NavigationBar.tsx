@@ -12,11 +12,10 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
 
 export const NavigationBar = () => {
-	const { isOpen, onOpen, onClose } = useDisclosure();
 	const NavbarItems = [
 		{
 			name: 'Home',
-			href: '/',
+			href: '#',
 		},
 		{
 			name: 'Contact',
@@ -55,13 +54,7 @@ export const NavigationBar = () => {
 					))}
 				</Stack>
 				<ThemeChanger />
-				<IconButton
-					size={'md'}
-					icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-					aria-label={'Open Menu'}
-					display={{ md: 'none' }}
-					onClick={isOpen ? onClose : onOpen}
-				/>
+				
 			</Container>
 		</Box>
 	);
