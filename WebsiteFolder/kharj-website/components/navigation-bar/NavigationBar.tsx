@@ -54,7 +54,6 @@ export const NavigationBar = () => {
 					))}
 				</Stack>
 				<ThemeChanger />
-				
 			</Container>
 		</Box>
 	);
