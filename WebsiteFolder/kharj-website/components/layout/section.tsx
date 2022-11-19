@@ -13,7 +13,7 @@ const StyledDiv = chakra(motion.div, {
 
 interface Props {
 	children?: ReactNode;
-	delay: AnimationOptions<any> | any;
+	delay?: AnimationOptions<any> | any;
 
 }
 
