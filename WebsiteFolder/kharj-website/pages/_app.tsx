@@ -8,6 +8,7 @@ import { NavigationBar } from '../components/navigation-bar/NavigationBar';
 import { Main } from '../components/Main';
 import { HomepageContent } from '../components/homepage-content/HomepageContent';
 import { Layout } from '../components/layout/index';
+import WithSubnavigation from '../components/navigation-bar/navbar';
 
 const theme = extendTheme({ baseTheme });
 

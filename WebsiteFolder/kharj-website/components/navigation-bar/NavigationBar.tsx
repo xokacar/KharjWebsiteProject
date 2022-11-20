@@ -2,26 +2,20 @@ import {
 	Box,
 	useColorModeValue,
 	Stack,
-	IconButton,
-	useDisclosure,
 	Container,
+	Image,
+	Flex,
+	Text,
 } from '@chakra-ui/react';
 import * as React from 'react';
 import { ThemeChanger } from '../theme-toggle/ThemeChanger';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
 
 export const NavigationBar = () => {
-	const NavbarItems = [
-		{
-			name: 'Home',
-			href: '#',
-		},
-		{
-			name: 'Contact',
-			href: '/contact',
-		},
-	];
+	const KharjLogo = useColorModeValue(
+		'https://user-images.githubusercontent.com/44809357/202858033-ac8adb8d-0e15-4931-ae46-5b1afe4f617a.png',
+		'https://user-images.githubusercontent.com/44809357/202858042-69621106-4e17-4d17-a43d-8e7e16929759.png'
+	);
 
 	return (
 		<Box
@@ -39,20 +33,29 @@ export const NavigationBar = () => {
 				alignItems='center'
 				justify-content='space-between'
 			>
-				<Stack
+				{/* <Stack
 					direction={{ base: 'column', md: 'row' }}
 					display={{ base: 'none', md: 'flex' }}
 					width={{ base: 'full', md: 'auto' }}
 					alignItems='center'
 					flexGrow={1}
 					mt={{ base: 4, md: 0 }}
-				>
-					{NavbarItems.map(({ href, name }) => (
+				> */}
+
+				<Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+					<Image
+						maxBlockSize='50px'
+						objectFit='contain'
+						src={KharjLogo}
+						alt='kharjlogo'
+					/>
+				</Flex>
+				{/* {NavbarItems.map(({ href, name }) => (
 						<NextLink href={href} key={name}>
 							{name}
 						</NextLink>
-					))}
-				</Stack>
+					))} */}
+
 				<ThemeChanger />
 			</Container>
 		</Box>
