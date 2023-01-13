@@ -6,7 +6,7 @@ export const Contact = () => {
 		<Section delay={0.4}>
 			<React.Fragment>
 				<Heading as='h2' size='md' letterSpacing='wider' lineHeight='taller'>
-					Contact with me
+					On the Web
 				</Heading>
 				<List>
 					<ListItem>
