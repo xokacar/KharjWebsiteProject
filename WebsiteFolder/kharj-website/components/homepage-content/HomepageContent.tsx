@@ -27,14 +27,14 @@ export const HomepageContent = () => {
 							spacing={3}
 						>
 							<Heading as='h1' size='lg' letterSpacing='wider'>
-								Kharj
+								Kharj (Okay Kacar)
 							</Heading>
 						</Stack>
 						<Text as='h2' lineHeight='160%'>
-							Hey I'm Kharj and I'm a software engineer. I'm currently working
-							at a firm called as NTT DATA a software engineer. I'm also a
-							student at the University of Turkish Aeronautical Association
-							studying Computer Engineer.
+							Hey I'm Kharj (Okay Kacar) and I'm a software engineer. I'm
+							currently working at a firm called as NTT DATA a software
+							engineer. I'm also a student at the University of Turkish
+							Aeronautical Association studying Computer Engineer.
 						</Text>
 						<VStack alignItems='flex-start' w='full' spacing={3}>
 							<Stack
