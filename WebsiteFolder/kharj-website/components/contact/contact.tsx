@@ -6,11 +6,11 @@ export const Contact = () => {
 		<Section delay={0.4}>
 			<React.Fragment>
 				<Heading as='h2' size='md' letterSpacing='wider' lineHeight='taller'>
-					On the Web
+					Contact
 				</Heading>
 				<List>
 					<ListItem>
-						<Link href='https://www.github.com/okaykacar' target='_blank'>
+						<Link href='https://www.github.com/xokacar' target='_blank'>
 							<Button variant='ghost'>
 								<Text lineHeight='taller'>Github</Text>
 							</Button>
