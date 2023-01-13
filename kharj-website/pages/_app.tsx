@@ -8,6 +8,8 @@ import { NavigationBar } from '../components/navigation-bar/NavigationBar';
 import { Main } from '../components/Main';
 import { HomepageContent } from '../components/homepage-content/HomepageContent';
 import { Layout } from '../components/layout/index';
+import { Analytics } from '@vercel/analytics/react';
+
 
 const theme = extendTheme({ baseTheme });
 
@@ -19,6 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<Main />
 				<HomepageContent />
 			</Layout>
+			<Analytics />
 			<Component {...pageProps} />
 		</Chakra>
 	);
