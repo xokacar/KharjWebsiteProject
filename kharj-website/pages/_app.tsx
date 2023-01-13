@@ -10,7 +10,6 @@ import { HomepageContent } from '../components/homepage-content/HomepageContent'
 import { Layout } from '../components/layout/index';
 import { Analytics } from '@vercel/analytics/react';
 
-
 const theme = extendTheme({ baseTheme });
 
 function MyApp({ Component, pageProps }: AppProps) {
