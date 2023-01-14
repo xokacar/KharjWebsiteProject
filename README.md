@@ -4,6 +4,7 @@
 
 ## Tech Stack
  - TypeScript
+ - React
  - Next.js
  - Chakra UI
  
