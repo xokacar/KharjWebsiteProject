@@ -1,6 +1,6 @@
-#  kharj.tech
+#  ookay.dev
 
-[kharj.tech](kharj.tech) is my personal website project.
+[ookay.dev](https://www.ookay.dev) is my personal website project.
 
 ## Tech Stack
  - TypeScript
