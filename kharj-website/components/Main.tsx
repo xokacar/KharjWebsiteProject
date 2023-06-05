@@ -9,7 +9,7 @@ export const Main = () => {
 					name='viewport'
 					content='width=device-width, inital-scale=1'
 				></meta>
-				<title>Kharj | Homepage</title>
+				<title>Okay Kacar</title>
 			</Head>
 		</Box>
 	);
