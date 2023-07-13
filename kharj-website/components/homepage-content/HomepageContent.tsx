@@ -4,7 +4,7 @@ import React from 'react';
 import { AvatarImage } from '../avatar-image/Avatar-Image';
 import { Section } from '../layout/section';
 import { Bio } from '../Bio/bio';
-import { ILove } from '../i-love/ILove';
+import { MyPassions } from '../mypassions/MyPassions';
 import { Contact } from '../contact/contact';
 
 export const HomepageContent = () => {
@@ -53,7 +53,7 @@ export const HomepageContent = () => {
 				<Bio />
 			</React.Fragment>
 			<React.Fragment>
-				<ILove />
+				<MyPassions />
 			</React.Fragment>
 			<React.Fragment>
 				<Contact />
