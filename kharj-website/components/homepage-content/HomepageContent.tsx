@@ -4,7 +4,7 @@ import React from 'react';
 import { AvatarImage } from '../avatar-image/Avatar-Image';
 import { Section } from '../layout/section';
 import { Bio } from '../Bio/bio';
-import { MyPassions } from '../mypassions/MyPassions';
+import { MyPassions } from '../mypassions/myPassions';
 import { Contact } from '../contact/contact';
 
 export const HomepageContent = () => {
