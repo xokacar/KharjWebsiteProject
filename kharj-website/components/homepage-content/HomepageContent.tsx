@@ -33,8 +33,8 @@ export const HomepageContent = () => {
 						<Text as='h2' lineHeight='160%'>
 							Hey I'm Okay Kacar and I'm a software engineer. Ihave graduated
 							from University of Turkish Aeronautical Association.I'm currently
-							working at a firm called as NTT DATA as a software engineer specializing
-							in React, React Native, Expo, Redux.
+							working at a firm called as NTT DATA as a software engineer
+							specializing in React, React Native, Expo, Redux.
 						</Text>
 						<VStack alignItems='flex-start' w='full' spacing={3}>
 							<Stack

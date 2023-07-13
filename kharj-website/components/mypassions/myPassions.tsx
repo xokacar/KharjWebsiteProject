@@ -45,26 +45,26 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 export const MyPassions = () => {
 	return (
 		<Box py={8}>
-      <Heading as="h2" size="md" letterSpacing="wider" mb={6}>
-        My Passions
-      </Heading>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-        <Feature
-          icon={<Icon as={LaptopWindowsRoundedIcon} w={8} h={8} />}
-          title="Frontend Development"
-          text="I am passionate about frontend development. I enjoy creating beautiful and responsive websites using React, TypeScript, and Next.js."
-        />
-        <Feature
-          icon={<Icon as={DesignServicesRoundedIcon} w={8} h={8} />}
-          title="UI/UX Design"
-          text="I also have a passion for UI/UX design. I love creating visually appealing designs for websites using Figma and Adobe XD."
-        />
-        <Feature
-          icon={<Icon as={MusicNoteRoundedIcon} w={8} h={8} />}
-          title="Music Production"
-          text="In addition to my tech skills, I enjoy music production. I love creating beats and Deephouse tracks using FL Studio."
-        />
-      </SimpleGrid>
-    </Box>
+			<Heading as='h2' size='md' letterSpacing='wider' mb={6}>
+				My Passions
+			</Heading>
+			<SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+				<Feature
+					icon={<Icon as={LaptopWindowsRoundedIcon} w={8} h={8} />}
+					title='Frontend Development'
+					text='I am passionate about frontend development. I enjoy creating beautiful and responsive websites using React, TypeScript, and Next.js.'
+				/>
+				<Feature
+					icon={<Icon as={DesignServicesRoundedIcon} w={8} h={8} />}
+					title='UI/UX Design'
+					text='I also have a passion for UI/UX design. I love creating visually appealing designs for websites using Figma and Adobe XD.'
+				/>
+				<Feature
+					icon={<Icon as={MusicNoteRoundedIcon} w={8} h={8} />}
+					title='Music Production'
+					text='In addition to my tech skills, I enjoy music production. I love creating beats and Deephouse tracks using FL Studio.'
+				/>
+			</SimpleGrid>
+		</Box>
 	);
 };
