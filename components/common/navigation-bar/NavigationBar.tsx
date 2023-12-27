@@ -47,13 +47,6 @@ export const NavigationBar = () => {
 						alt='kharjlogo'
 					/>
 				</Flex>
-				<Flex>
-					<Link href='/' passHref>
-						<Text as='a' mx={2}>
-							Home
-						</Text>
-					</Link>
-				</Flex>
 				<ThemeChanger />
 			</Container>
 		</Box>
