@@ -17,8 +17,8 @@ export const Bio = () => {
 			<Heading as='h1' size='lg' letterSpacing='wider'>
 				Kharj (Okay Kacar)
 			</Heading>
-			<HStack alignItems='flex-start' w='full' spacing={4}>
-				<AvatarImage />
+			<HStack alignItems='flex-start' w='full' spacing={4} marginBlock={5}>
+				{/* TODO	 <AvatarImage /> */}
 				<Text as='h2' lineHeight='170%'>
 					Hey I&apos;m Okay Kacar and I&apos;m a software engineer. I have
 					graduated University of Turkish Aeronautical Association. I&apos;m
