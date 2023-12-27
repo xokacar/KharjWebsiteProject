@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #  ookay.dev
 
 [ookay.dev](https://www.ookay.dev) is my personal website project which I used Typescript, Next.js 12, React.js, Chakra UI. The folder structure optimized for Next.js.  
@@ -15,20 +16,31 @@
 ## Tech Stack
  - TypeScript
  - React
+=======
+#  kharj.tech
+
+[kharj.tech](kharj.tech) is my personal website project.
+
+## Tech Stack
+ - TypeScript
+>>>>>>> source/refactor--app-wide-refactor
  - Next.js
  - Chakra UI
  
 ## Build your own kharj.tech
+<<<<<<< HEAD
 
  
 
 
+=======
+ 
+>>>>>>> source/refactor--app-wide-refactor
  ```
  $ git clone https://github.com/okaykacar/KharjWebsiteProject.git
  $ cd kharj.tech
  $ npm install
- $ npm run dev
- ```
+ $ npm ru
  
 ## License
  
