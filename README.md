@@ -1,17 +1,17 @@
-#  kharj.tech
+#  ookay.dev
 
-[kharj.tech](kharj.tech) is my personal website project.
+[ookay.dev](ookay.dev) is my personal website project.
 
 ## Tech Stack
  - TypeScript
  - Next.js
  - Chakra UI
- 
-## Build your own kharj.tech
+ - React
+
+## Build your own ookay.dev
  
  ```
- $ git clone https://github.com/okaykacar/KharjWebsiteProject.git
- $ cd kharj.tech
+ $ git clone https://github.com/xokacar/KharjWebsiteProject.git
  $ npm install
  $ npm run dev
  ```
