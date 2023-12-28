@@ -1,6 +1,6 @@
 #  ookay.dev
 
-[ookay.dev](ookay.dev) is my personal website project.
+[ookay.dev](https://ookay.dev) is my personal website project.
 
 ## Tech Stack
  - TypeScript
