@@ -41,10 +41,10 @@ $ npm install
 $ npm run dev
 ```
 
-Contributions 🤝
+## Contributions 🤝
 
 Contributions are welcome! Feel free to open issues, submit pull requests, or provide feedback to make ookay.dev even better.
 
-License 📜
+## License 📜
 
 License information will be provided for this project. Stay tuned! 📄
