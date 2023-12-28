@@ -12,7 +12,7 @@ ookay.dev is built with a robust tech stack that includes:
 
 - **Frontend Framework:** Next.js 🌐
 - **UI Framework:** Chakra UI 😎
-- **React ** 🚀
+- **React** 🚀
 - **Type Safety:** TypeScript 📝
 - **Linting and Formatting:** ESLint, Prettier 🧹
 - **Animation:** Framer Motion 🎉
